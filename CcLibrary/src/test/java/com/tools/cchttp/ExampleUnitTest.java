@@ -1,4 +1,4 @@
-package com.example.cchttp;
+package com.tools.cchttp;
 
 import org.junit.Test;
 
