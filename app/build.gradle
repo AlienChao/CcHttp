@@ -20,6 +20,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    // 使用 JDK 1.8
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -33,7 +38,12 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     implementation project(path: ':CcLibrary')
-   // implementation 'com.github.CcJsc:CcHttp:2'
+
+    // implementation 'com.github.AlienChao:CcHttp:2.1'
+   
+
+    // implementation 'com.github.CcJsc:CcHttp:2.1'
+
    // implementation 'com.github.AlienChao:CcHttp:1'
    // implementation 'com.github.AlienChao:CcHttp:v1.2'
     // implementation 'com.github.CcJsc:CcHttp:v1.2'

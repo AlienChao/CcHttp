@@ -3,7 +3,6 @@ package com.tools.cchttp.api;
 
 
 import com.tools.cchttp.Blog;
-import com.tools.cchttp.bean.Response;
 
 import io.reactivex.Observable;
 import okhttp3.ResponseBody;
@@ -27,8 +26,7 @@ public interface LoginService {
     Observable<ResponseBody> getBlog(@Path("id") int id);
 
 
-    @POST("blog")
-    Observable<Response<Blog>> getlogin(@Body Blog blog);
+
 
     @GET("https://www.baidu.com/")
     Observable<ResponseBody> getBaidu();
